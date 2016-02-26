@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "utf-8" />
+	<title>Exercice 2</Title>
+	
+</head>
+<body>
+	<form>
+		<h1> Inscription au forum</h1>
+			<label> Nom du produit: <input type="text" name= "NomPro"  onblur="NomProduit(NomPro)"/></label> 
+			</br>
+			</br>
+			<label> Quantite commande: <input type="password" name= "QtCom" onblur="QuantiteCom(QtCom)"/></label>
+			</br>
+			</br>
+			<label> Nom du client: <input type="text" name= "NomClient" onblur="NomCli(NomClient)"/></label>
+			</br>
+			</br>
+			<label> Adresse courriel du client: <input type="text" name= "AdrCli" onblur="AdresseCli(AdrCli)"/></label>
+			</br>
+			</br>
+			<label> Adresse de livraison: <input type="text" name= "AdrLiv" onblur="AdresseLiv(AdrLiv)"/></label>
+			</br>
+			</br>
+			<method="post" action="Vérifier.php" onsubmit="return verifierIdPass(this);">
+			<input type="submit" value="Envoyer">
+			
+			
+
+	</form>
+	
+	<script src="Exercice 2 Formulaire.js"></script>
+</body>
+</html>

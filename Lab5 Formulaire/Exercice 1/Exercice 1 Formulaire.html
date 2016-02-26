@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "utf-8" />
+	<title>Exercice 1</Title>
+	
+</head>
+<body>
+	<form onsubmit="return verifierIdPass(this);">
+		<h1> Inscription au forum</h1>
+			<label> Nom d'utilisateur: <input type="text" name= "NomId"  onblur="verifId(NomId)"/></label> 
+			</br>
+			</br>
+			<label> Mot de passe: <input type="password" name= "MotPasse" onblur="verifPass(MotPasse)"/></label>
+			</br>
+			</br>
+			<label> Nom: <input type="text" name= "Nom" onblur="verifNom(Nom)"/></label>
+			</br>
+			</br>
+			<label> Prenom: <input type="text" name= "Prenom" onblur="verifPrenom(Prenom)"/></label>
+			</br>
+			</br>
+			<label> Adresse courriel: <input type="text" name= "email" onblur="verifMail(email)"/></label>
+			</br>
+			</br>
+			<input type="submit" value="Envoyer">
+			</br>
+			</br>
+	</form>		
+	
+			<form onsubmit="return FaireConnexion(this)">
+			<fieldset>
+			<legend> Connexion compte</legend>
+			<label> Nom d'utilisateur: <input type="text" name= "ID"  onblur="VerifierIdPass(ID)"/></label> 
+			</br>
+			</br>
+			<label> Mot de passe: <input type="password" name= "mdp" onblur="verifIdPass(mdp)"/></label>
+			</br>
+			</br>
+			<input type="submit" value="Connexion">
+			</fieldset>
+			</form>
+			
+
+	
+	
+	<script src="Exercice 1 Formulaire.js"></script>
+</body>
+</html>
